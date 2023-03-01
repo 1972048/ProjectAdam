@@ -8,9 +8,32 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "Class",
+"language": "GDScript",
+"path": "res://Class.gd"
+}, {
+"base": "Node",
+"class": "Stats",
+"language": "GDScript",
+"path": "res://Stats.gd"
+}, {
+"base": "Resource",
+"class": "basestats",
+"language": "GDScript",
+"path": "res://basestats.gd"
+} ]
+_global_script_class_icons={
+"Class": "",
+"Stats": "",
+"basestats": ""
+}
+
 [application]
 
 config/name="ProjectAdam"
+run/main_scene="res://Class.tscn"
 config/icon="res://icon.png"
 
 [gui]
