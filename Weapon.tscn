@@ -1,0 +1,95 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://weapon.gd" type="Script" id=1]
+
+[node name="Weapon" type="Node"]
+
+[node name="Sword1" type="Node" parent="."]
+script = ExtResource( 1 )
+weapontype = "Sword"
+quality = "Common"
+strenght = 4
+agility = 2
+intelligence = 1
+
+[node name="Sword2" type="Node" parent="."]
+script = ExtResource( 1 )
+weapontype = "Sword"
+quality = "Rare"
+strenght = 7
+agility = 4
+intelligence = 3
+strreq = 8
+agireq = 5
+intreq = 4
+
+[node name="Sword3" type="Node" parent="."]
+script = ExtResource( 1 )
+weapontype = "Sword"
+quality = "Epic"
+strenght = 10
+agility = 5
+intelligence = 2
+strreq = 11
+agireq = 7
+intreq = 5
+
+[node name="Bow1" type="Node" parent="."]
+script = ExtResource( 1 )
+weapontype = "Bow"
+quality = "Common"
+strenght = 1
+agility = 4
+intelligence = 2
+
+[node name="Bow2" type="Node" parent="."]
+script = ExtResource( 1 )
+weapontype = "Bow"
+quality = "Rare"
+strenght = 4
+agility = 7
+intelligence = 3
+strreq = 5
+agireq = 7
+intreq = 4
+
+[node name="Bow3" type="Node" parent="."]
+script = ExtResource( 1 )
+weapontype = "Bow"
+quality = "Epic"
+strenght = 5
+agility = 10
+intelligence = 2
+strreq = 7
+agireq = 11
+intreq = 5
+
+[node name="Orb" type="Node" parent="."]
+script = ExtResource( 1 )
+weapontype = "Orb"
+quality = "Common"
+strenght = 2
+agility = 1
+intelligence = 4
+
+[node name="Orb2" type="Node" parent="."]
+script = ExtResource( 1 )
+weapontype = "Orb"
+quality = "Rare"
+strenght = 3
+agility = 4
+intelligence = 7
+strreq = 4
+agireq = 5
+intreq = 7
+
+[node name="Orb3" type="Node" parent="."]
+script = ExtResource( 1 )
+weapontype = "Orb"
+quality = "Epic"
+strenght = 3
+agility = 4
+intelligence = 10
+strreq = 6
+agireq = 6
+intreq = 11

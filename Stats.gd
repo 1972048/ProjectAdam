@@ -1,7 +1,5 @@
 extends Node
 
-class_name Stats
-
 signal levelups(level)
 
 var level : int
@@ -34,11 +32,11 @@ func get_xpreq(level):
 func levelup():
 	level +=1
 	xpreq = get_xpreq(level)
-	_on_Stats_levelup(level)
 	strenght += 1  
 	agility += 1
 	intelligence += 1
+	emit_signal("levelups", level)
 
 
 func _on_Stats_levelup(level):
-	print("Level UP")
+	pass
