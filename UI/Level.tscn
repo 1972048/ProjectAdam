@@ -18,7 +18,7 @@ text = "Level"
 margin_left = 38.0
 margin_right = 46.0
 margin_bottom = 14.0
-text = "0"
+text = "1"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="."]
 margin_top = 18.0

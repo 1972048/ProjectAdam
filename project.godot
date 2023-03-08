@@ -12,37 +12,59 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Class",
 "language": "GDScript",
-"path": "res://Class.gd"
+"path": "res://Stat/Class.gd"
+}, {
+"base": "Node",
+"class": "Equipments",
+"language": "GDScript",
+"path": "res://Weapon/Equipment.gd"
 }, {
 "base": "HBoxContainer",
 "class": "UIStats",
 "language": "GDScript",
-"path": "res://UIStats.gd"
+"path": "res://UI/UIStats.gd"
 }, {
 "base": "Resource",
 "class": "basestats",
 "language": "GDScript",
-"path": "res://basestats.gd"
+"path": "res://Stat/basestats.gd"
+}, {
+"base": "Resource",
+"class": "baseweapon",
+"language": "GDScript",
+"path": "res://Weapon/baseweapon.gd"
 } ]
 _global_script_class_icons={
 "Class": "",
+"Equipments": "",
 "UIStats": "",
-"basestats": ""
+"basestats": "",
+"baseweapon": ""
 }
 
 [application]
 
 config/name="ProjectAdam"
-run/main_scene="res://Class.tscn"
+run/main_scene="res://Demo.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Stats="*res://Stats.gd"
+Stats="*res://Stat/Stats.gd"
+Weapons="*res://Weapon/weapons.gd"
 
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+change_weapon={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":81,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":81,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [physics]
 

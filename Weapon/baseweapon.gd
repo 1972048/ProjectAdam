@@ -1,5 +1,7 @@
 extends Resource
 
+class_name baseweapon
+
 export (String, "Sword", "Bow", "Orb") var weapontype
 export (String, "Common", "Rare", "Epic") var quality
 export var name : String

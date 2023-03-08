@@ -35,8 +35,4 @@ func levelup():
 	strenght += 1  
 	agility += 1
 	intelligence += 1
-	emit_signal("levelups", level)
-
-
-func _on_Stats_levelup(level):
-	pass
+	emit_signal("levelups", level, xpreq, strenght , agility, intelligence)
